@@ -1,7 +1,7 @@
 import React from "react";
 import '../assets/css/Login.css'
 import signup from '../assets/signup-.jpg'
-
+import { Link } from 'react-router-dom'
 
 const Login = () =>{
       const [data, setData] = React.useState({
@@ -22,19 +22,17 @@ const Login = () =>{
       return(
             <form onSubmit={onSubmit}>
                   <div className="main">
-                        <div>
-                              <img src={signup} alt="signup" />
-                        </div>
+                        <img src={signup}></img>
                         <div className="container">
-                              <h1><strong>LOG</strong> IN</h1>
+                              <h1>LOGIN</h1>
                               <input type="text" placeholder="USERNAME" name="username" onChange={handleOnChange}></input>
-                              <input type="password" placeholder="PASSWORD" name="password" onChange={handleOnChange}></input>
-                              <a href="#">Forget Password?</a>
+                              <input type="text" placeholder="PASSWORD" name="password" onChange={handleOnChange}></input>
                               <button type="submit">LOGIN</button>
+                              <Link to='/signup'>If you don't have account? SignUP</Link>
                         </div>    
                   </div>
                    
             </form>
       )
 }
-export default Login
+export default Login

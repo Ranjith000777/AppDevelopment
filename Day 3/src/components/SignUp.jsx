@@ -1,6 +1,7 @@
 import React from "react";
 import '../assets/css/Signup.css'
 import signup from '../assets/signup-.jpg'
+import { Link } from 'react-router-dom'
 
 const Signup = () =>
 {
@@ -42,6 +43,7 @@ const Signup = () =>
                               <input type="password" placeholder="PASSWORD" name="password" onChange={handleOnChange}></input>
                               <input type="password" placeholder="CONFIRM PASSWORD" name="confirmpassword" onChange={handleOnChange}></input>
                               <button type="submit">SIGNUP</button>
+                              <Link to='/login'>Already have an account? Signin</Link>
                         </div>    
                   </div>
                    

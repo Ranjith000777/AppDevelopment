@@ -69,15 +69,7 @@
       box-shadow: 0 0 2px 2px #5cb323;
 
 }
-.container-sign a{
-      margin-right: 23vh;
-      text-decoration: none;
-      cursor: pointer;
-      color: #000000;
-}
-.container-sign a:hover{
-      color:rgb(0, 68, 255);
-}
+
 .container-sign button:active{
       transform: scale(0.96);
 }
