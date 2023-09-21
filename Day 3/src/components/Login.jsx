@@ -1,38 +1,48 @@
-import React from "react";
+import React from 'react'
+import login from '../assets/login.jpg'
 import '../assets/css/Login.css'
-import signup from '../assets/signup-.jpg'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
-const Login = () =>{
-      const [data, setData] = React.useState({
-            username:"",
-            password:""
-      })
-      const handleOnChange = (e) => {
-            const [name, value] = [e.target.name, e.target.value] ;
-            setData({
-                  ...data,
-                  [name]:value
-            })
-      }
-      const onSubmit = (e) => {
-            e.preventDefault() ;
-            console.log(data) ;
-      }
-      return(
-            <form onSubmit={onSubmit}>
-                  <div className="main">
-                        <img src={signup}></img>
-                        <div className="container">
-                              <h1>LOGIN</h1>
-                              <input type="text" placeholder="USERNAME" name="username" onChange={handleOnChange}></input>
-                              <input type="text" placeholder="PASSWORD" name="password" onChange={handleOnChange}></input>
-                              <button type="submit">LOGIN</button>
-                              <Link to='/signup'>If you don't have account? SignUP</Link>
-                        </div>    
-                  </div>
-                   
-            </form>
-      )
+const Login = () => {
+  const navigate = useNavigate() ;
+  const [data, setData] = React.useState({
+    email:"",
+    password:""
+})
+const handleOnChange = (e) => {
+    const [name, value] = [e.target.name, e.target.value] ;
+    setData({
+          ...data,
+          [name]:value
+    })
 }
-export default Login
+
+const onSubmit = (e) => {
+    e.preventDefault() ;
+    
+    console.log(data) ;
+    if(data.email === "admin@gmail.com" && data.password === "12345")
+    {
+      navigate("/adminDashboard")
+    }
+}
+  return (
+    <div>
+      <div className="main" onSubmit={onSubmit}>
+            <img src={login} alt="" />
+            <form>
+                  <div className="container">
+                        <label className="heading">LOGIN</label>
+                        <input type="email" name ="email" placeholder='EMAIL' onChange={handleOnChange}/>
+                        <input type="password" name ="password" placeholder='PASSWORD'onChange={handleOnChange}/>
+                        <label>Forget Password? <Link to='/'>Click here</Link></label>
+                        <button type="submit">LOGIN</button>
+                        <label>Already have an account? <Link to='/signup'>SignUp</Link></label>
+                  </div>
+            </form>
+      </div>
+    </div>
+  )
+}
+
+export default Login
