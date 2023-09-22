@@ -1,0 +1,95 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 250px;
+      background-color: rgb(255, 255, 255);
+      padding: 10px 14px;
+      border-right: 1px solid #00000019;
+}
+
+body{
+      min-height: 100vh;
+}
+
+nav .logo-name{
+      min-width: 60px;
+      text-align: center;
+}
+
+nav .logo{
+      font-size: 25px;
+      font-weight: 600;
+}
+nav .menu-items{
+      
+      margin-top: 40px;
+      height: calc(100% - 90px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+.menu-items li{
+      list-style: none;
+}
+.menu-items li .link-text{
+      text-decoration: none;
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+}
+.menu-items li .link-text:hover::before{
+      content:"";
+      position: absolute;
+      left: -7px;
+      height: 15px;
+      width: 5px;
+      border-radius: 50%;
+}
+
+.menu-items li .link-name{
+      font-size: 18px;
+      font-weight: 500;
+}
+
+
+.menu-items .logout-mod{
+      padding-top: 10px;
+      border-top: 1px solid rgba(0, 0, 0, 0.153);
+}
+
+.settings{
+      position: relative;
+      height: calc(100vh - 70px);
+      width: calc(100% - 250px);
+      left: 250px;
+      padding: 10px 14px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.header{
+      width: calc(100% - 250px);
+      position: relative;
+      height: 70px;
+      left: 250px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      padding: 30px;
+      border-bottom: 1px solid #00000020;
+}
+.header label{
+      font-weight: 600;
+}
