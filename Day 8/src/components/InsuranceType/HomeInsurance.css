@@ -1,0 +1,25 @@
+.homeins-main{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.homeinsurance-main
+{
+      width: 80%;
+      height: 80vh;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+}
+.homeinsurance-main .homeinsurance-content h3{
+      font-weight: 500;
+}
+.homeinsurance-main .homeinsurance-content .btn{
+      margin-left: auto;
+      margin-right: auto;
+}

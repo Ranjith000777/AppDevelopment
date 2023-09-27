@@ -1,0 +1,19 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+
+.help-user{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.help-user .faq-main .contact-main .contact{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: aqua;
+}
+.help-user .faq-main .btn{
+      background-color: red;
+}
