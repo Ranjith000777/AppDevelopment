@@ -1,0 +1,133 @@
+.main{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+}
+.help{
+      
+      height: calc(100vh - 250px);
+      width: calc(100% - 250px);
+      left: 250px;
+      
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      gap: 5rem;
+      margin-left: 30vh;
+      
+}
+
+.faq{
+      max-width:70vh;
+    
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: right;
+      gap: 10px;
+      padding: 20px 40px;
+      border-bottom: 1px solid #000;
+}
+h1{
+      text-align: center;
+      font-size: 25px;
+      font-weight: 600;
+      padding: 10px;     
+}
+.faq .questions{
+      margin-top: 5px;
+      margin-left: 20px;
+      display: flex;
+      font-size: 19px;
+      justify-content: space-between;
+}
+
+.faq p{
+      line-height: 1.6;
+      margin-left: 20px;
+}
+
+.contact-main{
+      width: 100vh;
+      height: calc(100vh - 10vh);
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+}
+.contact{
+      width: 90vh;
+      height: 65vh;
+      background-color: rgba(224, 224, 224, 0.356);
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+}
+.address{
+      width: 90vh;
+      height: 20vh;
+      background-color: rgb(255, 255, 255);
+}
+.contact .inputname{
+      display: flex;
+      gap: 5rem;
+}
+.contact .inputname input{
+      width: 35vh;
+      height: 5vh;
+      padding: 5px 10px;
+      border: none;
+      font-size: 18px;
+      border-bottom: 1px solid #000;
+}
+.contact input{
+      width: 79vh;
+      height: 5vh;
+      padding: 5px 10px;
+      border: none;
+      font-size: 18px;
+      border-bottom: 1px solid #000;
+      outline: none; 
+      font-family: "Montserrat",sans-serif;
+
+}
+.contact textarea{
+      outline: none; 
+      padding: 5px 10px;
+      font-size: 18px;
+      font-family: "Montserrat",sans-serif;
+}
+
+.address{
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      padding: 20px 20px;
+      margin-left: auto;
+      flex-direction: row;
+      
+}
+.address .addresssub1{
+      margin-right: auto;
+      height: 20vh;
+      width: 45vh;
+      background-color: rgb(255, 255, 255);
+}
+.address .addresssub1, .addresssub2 p{
+      text-align: center;
+      font-weight: 500;
+      font-size: 18px;
+}
+
+.address .addresssub2{
+      margin-right: auto;
+      height: 20vh;
+      width: 45vh;
+      background-color: rgb(255, 255, 255);
+}

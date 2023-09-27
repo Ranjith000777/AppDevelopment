@@ -1,0 +1,167 @@
+.login-container {
+      width: 100%;
+      display: flex;
+      overflow: auto;
+      min-height: 100vh;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .login-container01 {
+      gap: 2rem;
+      width: 778px;
+      height: 872px;
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      flex-direction: column;
+      padding-bottom: 10px;
+      justify-content: center;
+    }
+    .login-container02 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .login-container01 input{
+      width: 30vh;
+      height: 5vh;
+      outline: none;
+      padding: 10px;
+      font-size: 18px;
+    }
+    .login-container08 input, .login-container09 input{
+      width: 20vh;
+      height: 2vh;
+      outline: none;
+      padding: 10px;
+      font-size: 18px;
+      margin-left: auto;
+    }
+    .login-container01 textarea{
+      width: 63vh;
+      height: 30vh;
+      outline: none;
+      padding: 10px;
+      font-size: 17px;
+      font-family: 'Montserrat';
+    }
+    .login-container01 select{
+      width: 30vh;
+      height: 5vh;
+      outline: none;
+      padding: 10px;
+      font-size: 20px;
+    }
+    .login-container03 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .login-container04 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .login-textarea {
+      width: 517px;
+      height: 80px;
+    }
+    .login-container05 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .login-container06 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .login-container07 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .login-textarea1 {
+      width: 523px;
+      height: 104px;
+    }
+    .login-container08 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .login-container09 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      
+    }
+    .login-container10 {
+      flex: 0 0 auto;
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .login-container .login-container01 .login-container10 .button1{
+      flex: 0 0 auto;
+      width: 20vh;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      border: none;
+      font-size: 15px;
+      background-color: rgb(255, 0, 0);
+      border-radius: 10px;
+      font-size: 18px;
+      color: #fff;
+    }
+    .login-container10 .button2{
+      flex: 0 0 auto;
+      width: 20vh;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      border: none;
+      font-size: 18px;
+      background-color: blue;
+      color: #fff;
+      border-radius: 10px;
+    }
+    
