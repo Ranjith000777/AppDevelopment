@@ -1,0 +1,28 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+.policy-main-policy{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.policy-main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+.policy-main-sub{
+      width: 90%;
+      height: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+}
+.policy-main-sub p{
+      line-height: 25px;
+}

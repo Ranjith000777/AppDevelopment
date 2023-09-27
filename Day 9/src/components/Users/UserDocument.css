@@ -1,0 +1,33 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+.documentList{
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      gap:2rem;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+.buttoninsurance{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+}
+.buttoninsurance button{
+      width: 45vh;
+      height: 10vh;
+      font-size: 25px;
+      font-family: 'Montserrat';
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      background-color: rgb(34, 158, 2);
+      color: #fff;
+}
+.buttoninsurance button:hover{
+      background-color: rgb(51, 255, 0);
+      color: #fff;
+}
