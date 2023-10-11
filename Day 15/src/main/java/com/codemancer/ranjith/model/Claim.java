@@ -15,7 +15,7 @@ public class Claim {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private Long id;
+    private int id;
 
     @Column(length = 50, nullable = false)
 
@@ -33,7 +33,7 @@ public class Claim {
 
 	
 	
-	public Claim(Long id, String customername, String customeremail, String status) {
+	public Claim(int id, String customername, String customeremail, String status) {
 		super();
 		this.id = id;
 		this.customername = customername;
@@ -43,13 +43,13 @@ public class Claim {
 
 
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
 
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

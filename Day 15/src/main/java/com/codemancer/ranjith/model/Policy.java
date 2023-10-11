@@ -14,7 +14,7 @@ public class Policy {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private Long id;
+    private int id;
 
     @Column(length = 50, nullable = false)
 
@@ -24,11 +24,11 @@ public class Policy {
 
     private int policyavailable;
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -45,13 +45,6 @@ public class Policy {
 	}
 
 	public void setPolicyavailable(int policyavailable) {
-		this.policyavailable = policyavailable;
-	}
-
-	public Policy(Long id, String policyname, int policyavailable) {
-		super();
-		this.id = id;
-		this.policyname = policyname;
 		this.policyavailable = policyavailable;
 	}
 	

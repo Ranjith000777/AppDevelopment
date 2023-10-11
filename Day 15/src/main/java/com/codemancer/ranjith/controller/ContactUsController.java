@@ -1,11 +1,8 @@
 package com.codemancer.ranjith.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,45 +14,55 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.codemancer.ranjith.model.ContactUs;
-import com.codemancer.ranjith.model.Policy;
-import com.codemancer.ranjith.repository.PolicyRepository;
-
+import com.codemancer.ranjith.repository.ContactUsRepository;
 
 @RestController
-@RequestMapping("/api/policy")
+@RequestMapping("/api/contact")
 @CrossOrigin
-public class PolicyController {
-	@Autowired
+
+public class ContactUsController {
+@Autowired
 	
-	private PolicyRepository policyRepository ;
+	private ContactUsRepository policyRepository ;
 	
 
 	@PostMapping("/add")
-	public Policy add(final @RequestBody Policy policy)
+	public ContactUs add(final @RequestBody ContactUs policy)
 	{
 		return policyRepository.save(policy) ;
 		
 	}
 	@GetMapping("/get")
-	public List<Policy> getAllStudent()
+	public List<ContactUs> getAllStudent()
 	{
 		return policyRepository.findAll() ;
 	}
 	@GetMapping("/gets/{id}")
-	public Policy getAllStudents(@PathVariable int id)
+	public ContactUs getAllStudents(@PathVariable int id)
 	{
 		return policyRepository.findById(id).orElse(null) ;
 	}
-	@PutMapping("/put/{id}")
-	public Policy updatePolicy(@RequestBody Policy updatedContact, @PathVariable int id) {
+	
+	@PutMapping("/update/{id}")
+
+	public ContactUs updateContact(@RequestBody ContactUs updatedContact, @PathVariable int id) {
 
 	    return	policyRepository.findById(id)
 
-	            .map(existingPolicy -> {
+	            .map(existingContact -> {
 
-	                existingPolicy.setPolicyname(updatedContact.getPolicyname());
-	                existingPolicy.setPolicyavailable(updatedContact.getPolicyavailable());
-	                return policyRepository.save(existingPolicy);
+	                existingContact.setFirstname(updatedContact.getFirstname());
+
+	                existingContact.setLastname(updatedContact.getLastname());
+
+	                existingContact.setEmail(updatedContact.getEmail());
+
+	                existingContact.setSubject(updatedContact.getSubject());
+
+	                existingContact.setMessage(updatedContact.getMessage());
+
+	                return policyRepository.save(existingContact);
+
 	            })
 
 	            .orElse(null);
@@ -66,5 +73,4 @@ public class PolicyController {
 		policyRepository.deleteById(id) ;
 		return "Deleted Successfully" ;
 	}
-	
 }

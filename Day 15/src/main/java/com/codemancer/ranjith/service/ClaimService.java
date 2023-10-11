@@ -2,15 +2,12 @@ package com.codemancer.ranjith.service;
 
 import java.util.List;
 
-import com.codemancer.ranjith.dto.request.UserRequest;
-import com.codemancer.ranjith.dto.response.UserResponse;
+import com.codemancer.ranjith.model.Claim;
+
 
 public interface ClaimService {
-	List<UserResponse> getAllUsers();
 
-    UserResponse getUser(Long uid);
-
-    UserResponse updateUser(UserRequest request, Long uid);
-
-    boolean deleteProduct(Long uid);
+	public Claim saveStudent(Claim student) ;
+	public List<Claim> getAllStudent() ;
+	public Claim saveFlush(Claim student) ;
 }
